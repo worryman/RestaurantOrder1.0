@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+     >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="false" >
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="总价:"
+        android:layout_alignBottom="@+id/btn_send"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
+        android:text="提交"
+        android:id="@+id/btn_send"
+        android:layout_gravity="right"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$ 0"
+        android:id="@+id/textView_totalprice"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toStartOf="@+id/btn_send" />
+
+</RelativeLayout>
